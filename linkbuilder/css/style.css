@@ -1,0 +1,342 @@
+/*** HTML 5 CSS RESET ***/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:none;
+    font-family: arial;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    cursor: pointer;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/*** END HTML CSS RESET ***/
+
+/*** MAIN STYLES ***/
+@media (max-width: 1000px) {
+    .lb_wrapper {
+    }
+    .lb_wrapper_inner {
+        left: 25%;
+        top: 25%;
+        position: absolute;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        width: 50%;
+        height: 50%;
+        background: #f1f1f1;
+        text-align: center;
+        padding: 10px;
+        max-width: 500px;
+        max-height: 500px;
+    }
+}
+@media (min-width: 1000px) {
+    .lb_wrapper {
+        left: 50%;
+        top: 25%;
+        position: absolute;
+    }
+    .lb_wrapper_inner {
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        width: 500px;
+        height: 100%;
+        margin-left: -250px;
+        height: 50%;
+        background: #f1f1f1;
+        text-align: center;
+        padding: 10px;
+        max-width: 500px;
+        max-height: 500px;
+    }
+}
+
+.lb_toggle {
+    border-bottom: 2px solid #686868;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.lb_toggle a {
+    margin: 0;
+}
+
+@media screen and (min-width: 768px){
+    .line-break {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #lb_toggle_search {
+        line-height: 3;
+    }
+}
+
+#lb_form_wrapper, #lb_search_wrapper {
+    display: none;
+}
+
+.lb_title {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#lb_form {
+    text-align: left;
+}
+
+.gotcha_input {
+    position: absolute;
+    margin-top: -99999px;
+}
+
+.lb_error {
+    color: #ff0000;
+}
+
+.submit_button {
+    color: #fff;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background-color: #6b83b6;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    padding: 3px;
+    margin-top: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.lb_add_site_modal, .lb_add_tid_modal, .lb_add_ref3_modal, .lb_add_ref4_modal {
+    font-size: 10px;
+}
+
+#lb_add_site_submit, #lb_add_tid_submit, #lb_add_ref3_submit, #lb_add_ref4_submit {
+    float: right;
+}
+
+#lb_add_site_bottom, #lb_add_tid_bottom, #lb_add_ref3_bottom, #lb_add_ref4_bottom {
+    text-align: center;
+}
+
+#lb_submit_div {
+    margin-top: 10px;
+}
+
+#lb_notice {
+    margin-top: 15px;
+}
+
+#lb_search_results {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.lb_search_item {
+    margin-bottom: 3px;
+}
+
+.pagination {
+    margin-top: 10px;
+}
+
+/*** MODAL WINDOWS ***/
+/* DO NOT ALTER */
+#colorbox, #cboxOverlay, #cboxWrapper {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:9999;
+    overflow:hidden;
+    font-family:'action_man_extendedregular';
+    font-size:12px;
+    color:#fff;
+}
+#cboxOverlay {
+    position:fixed;
+    width:100%;
+    height:100%;
+}
+#cboxMiddleLeft, #cboxBottomLeft {
+    clear:left;
+}
+#cboxContent {
+    position:relative;
+}
+#cboxLoadedContent {
+    overflow:auto;
+}
+#cboxTitle {
+    margin:0;
+}
+#cboxLoadingOverlay, #cboxLoadingGraphic {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow {
+    cursor:pointer;
+    display:none !important;
+}
+.cboxPhoto {
+    float:left;
+    margin:auto;
+    border:0;
+    display:block;
+}
+.cboxIframe {
+    width:100%;
+    height:100%;
+    display:block;
+    border:0;
+}
+
+/* STANDARD COLORBOX WINDOW CSS */
+.colorboxtitle {
+    color:#fff;
+    font-weight:bold;
+    background:#6b83b6;
+    padding:5px;
+}
+.cbtitle {
+    float:left;
+}
+.cbclose {
+    float:right;
+    cursor:pointer;
+}
+.colorboxbody {
+    background:#fff;
+    color:#000;
+    padding:10px;
+}
+
+.standardlbcontent {
+    padding-bottom: 5px;
+    margin: 40px;
+    background-color: rgb(255, 255, 255); /* Needed for IEs */
+    border: #6b83b6 solid 2px;
+    -mox-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+}
+
+.standardlbtop {
+    padding: 2px 5px;
+    background: #6b83b6;
+    color: #fff;
+    font-size: 19px;
+    font-weight: normal;
+}
+
+.colorboxtitle {
+    float: left;
+}
+
+.colorboxclose {
+    float: right;
+    background: url('../images/close.png') no-repeat;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.standardlbbottom {
+    color: #000;
+    padding: 5px;
+}
